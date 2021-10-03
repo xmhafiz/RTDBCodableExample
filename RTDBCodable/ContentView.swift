@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var viewModel: TaskViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(viewModel.tasks.reversed(), id: \.id) { task in
+                TaskRowView(task: task)
+            }
+            .navigationBarTitle("Todo")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: addTodo){
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
+    }
+    
+    private func addTodo() {
+        viewModel.addTask()
     }
 }
 
