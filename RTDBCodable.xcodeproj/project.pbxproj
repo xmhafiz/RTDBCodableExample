@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3969F8558C36A8C4E8940D35 /* Pods_RTDBCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDF97F79F8AF504A3EF81D5 /* Pods_RTDBCodable.framework */; };
+		861C053427096B4900713E19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C053327096B4900713E19 /* AppDelegate.swift */; };
+		861C053627096C6900713E19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 861C053527096C6900713E19 /* GoogleService-Info.plist */; };
 		8680602D27091B4F00E4DBFF /* RTDBCodableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680602C27091B4F00E4DBFF /* RTDBCodableApp.swift */; };
 		8680602F27091B4F00E4DBFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680602E27091B4F00E4DBFF /* ContentView.swift */; };
 		8680603127091B5400E4DBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8680603027091B5400E4DBFF /* Assets.xcassets */; };
@@ -14,11 +17,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D7055842E4915634EB6C46E /* Pods-RTDBCodable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTDBCodable.debug.xcconfig"; path = "Target Support Files/Pods-RTDBCodable/Pods-RTDBCodable.debug.xcconfig"; sourceTree = "<group>"; };
+		861C053327096B4900713E19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		861C053527096C6900713E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8680602927091B4F00E4DBFF /* RTDBCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTDBCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8680602C27091B4F00E4DBFF /* RTDBCodableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTDBCodableApp.swift; sourceTree = "<group>"; };
 		8680602E27091B4F00E4DBFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8680603027091B5400E4DBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8680603327091B5400E4DBFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B66F84D0A696CBB064498161 /* Pods-RTDBCodable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTDBCodable.release.xcconfig"; path = "Target Support Files/Pods-RTDBCodable/Pods-RTDBCodable.release.xcconfig"; sourceTree = "<group>"; };
+		CCDF97F79F8AF504A3EF81D5 /* Pods_RTDBCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTDBCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3969F8558C36A8C4E8940D35 /* Pods_RTDBCodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E79EA0FD2F9B3D4E4BB8651 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D7055842E4915634EB6C46E /* Pods-RTDBCodable.debug.xcconfig */,
+				B66F84D0A696CBB064498161 /* Pods-RTDBCodable.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		817C80C84A2AD3C0DE01C764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCDF97F79F8AF504A3EF81D5 /* Pods_RTDBCodable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8680602027091B4F00E4DBFF = {
 			isa = PBXGroup;
 			children = (
 				8680602B27091B4F00E4DBFF /* RTDBCodable */,
 				8680602A27091B4F00E4DBFF /* Products */,
+				4E79EA0FD2F9B3D4E4BB8651 /* Pods */,
+				817C80C84A2AD3C0DE01C764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,7 +79,9 @@
 		8680602B27091B4F00E4DBFF /* RTDBCodable */ = {
 			isa = PBXGroup;
 			children = (
+				861C053527096C6900713E19 /* GoogleService-Info.plist */,
 				8680602C27091B4F00E4DBFF /* RTDBCodableApp.swift */,
+				861C053327096B4900713E19 /* AppDelegate.swift */,
 				8680602E27091B4F00E4DBFF /* ContentView.swift */,
 				8680603027091B5400E4DBFF /* Assets.xcassets */,
 				8680603227091B5400E4DBFF /* Preview Content */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8680603727091B5400E4DBFF /* Build configuration list for PBXNativeTarget "RTDBCodable" */;
 			buildPhases = (
+				15CD47964CA28829E4901A7A /* [CP] Check Pods Manifest.lock */,
 				8680602527091B4F00E4DBFF /* Sources */,
 				8680602627091B4F00E4DBFF /* Frameworks */,
 				8680602727091B4F00E4DBFF /* Resources */,
+				BAC52A16AE692E5E2C7C0F0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,16 +159,60 @@
 			files = (
 				8680603427091B5400E4DBFF /* Preview Assets.xcassets in Resources */,
 				8680603127091B5400E4DBFF /* Assets.xcassets in Resources */,
+				861C053627096C6900713E19 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15CD47964CA28829E4901A7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTDBCodable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC52A16AE692E5E2C7C0F0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTDBCodable/Pods-RTDBCodable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTDBCodable/Pods-RTDBCodable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RTDBCodable/Pods-RTDBCodable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8680602527091B4F00E4DBFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861C053427096B4900713E19 /* AppDelegate.swift in Sources */,
 				8680602F27091B4F00E4DBFF /* ContentView.swift in Sources */,
 				8680602D27091B4F00E4DBFF /* RTDBCodableApp.swift in Sources */,
 			);
@@ -263,12 +339,14 @@
 		};
 		8680603827091B5400E4DBFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7055842E4915634EB6C46E /* Pods-RTDBCodable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RTDBCodable/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -292,12 +370,14 @@
 		};
 		8680603927091B5400E4DBFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66F84D0A696CBB064498161 /* Pods-RTDBCodable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RTDBCodable/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

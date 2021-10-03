@@ -57,3 +57,6 @@ Carthage/Build
 
 # R.swift
 *.generated.swift
+
+# firebase
+GoogleService-Info.plist
