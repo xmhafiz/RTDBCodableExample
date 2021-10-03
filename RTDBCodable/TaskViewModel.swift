@@ -27,23 +27,31 @@ class TaskViewModel: ObservableObject {
             self.tasks = children.compactMap { snapshot in
                 return try? snapshot.data(as: Task.self)
             }
+            .sorted(by: { $0.updatedAt > $1.updatedAt })
+            .sorted(by: { !$0.completed && $1.completed })
         }
     }
     
-    func addTask() {
+    func addTask(title: String) {
         let id = UUID().uuidString
         ref.child("tasks/\(id)")
             .setValue([
                 "id": id,
-                "title": "Task Example",
-                "completed": false
+                "title": title,
+                "completed": false,
+                "updatedAt": Date().timeIntervalSince1970
             ])
     }
     
     func markComplete(id: String, completed: Bool) {
         ref.child("tasks/\(id)")
             .updateChildValues([
-                "completed": completed
+                "completed": completed,
+                "updatedAt": Date().timeIntervalSince1970
             ])
+    }
+    
+    func remove(id: String) {
+        ref.child("tasks/\(id)").setValue(nil)
     }
 }

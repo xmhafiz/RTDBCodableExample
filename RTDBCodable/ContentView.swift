@@ -12,22 +12,24 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.tasks.reversed(), id: \.id) { task in
-                TaskRowView(task: task)
+            VStack {
+                AddTaskView()
+                List {
+                    ForEach(viewModel.tasks, id: \.id) { task in
+                        TaskRowView(task: task)
+                    }
+                    .onDelete(perform: deleteRow)
+                }
+                .animation(.default)
             }
             .navigationBarTitle("Todo")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: addTodo){
-                        Image(systemName: "plus")
-                    }
-                }
-            }
         }
     }
     
-    private func addTodo() {
-        viewModel.addTask()
+    private func deleteRow(indexSet: IndexSet) {
+        guard let index = indexSet.first else { return }
+        let taskId = viewModel.tasks[index].id
+        viewModel.remove(id: taskId)
     }
 }
 
