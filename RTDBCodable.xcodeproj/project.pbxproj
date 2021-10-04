@@ -19,6 +19,7 @@
 		86AA77662709FD6B00EFAA74 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 86AA77652709FD6B00EFAA74 /* FirebaseDatabaseSwift-Beta */; };
 		86AA7768270A015000EFAA74 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA7767270A015000EFAA74 /* TaskRowView.swift */; };
 		86AA776A270A066E00EFAA74 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA7769270A066E00EFAA74 /* AddTaskView.swift */; };
+		86AA776C270AB48B00EFAA74 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA776B270AB48B00EFAA74 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		8680603327091B5400E4DBFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86AA7767270A015000EFAA74 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		86AA7769270A066E00EFAA74 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		86AA776B270AB48B00EFAA74 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				8680602C27091B4F00E4DBFF /* RTDBCodableApp.swift */,
 				861C053327096B4900713E19 /* AppDelegate.swift */,
 				8680602E27091B4F00E4DBFF /* ContentView.swift */,
+				86AA776B270AB48B00EFAA74 /* HomeView.swift */,
 				86AA7767270A015000EFAA74 /* TaskRowView.swift */,
 				86AA7769270A066E00EFAA74 /* AddTaskView.swift */,
 				861C0539270971F400713E19 /* TaskViewModel.swift */,
@@ -178,6 +181,7 @@
 				861C053827096FC700713E19 /* Task.swift in Sources */,
 				86AA776A270A066E00EFAA74 /* AddTaskView.swift in Sources */,
 				861C053427096B4900713E19 /* AppDelegate.swift in Sources */,
+				86AA776C270AB48B00EFAA74 /* HomeView.swift in Sources */,
 				8680602F27091B4F00E4DBFF /* ContentView.swift in Sources */,
 				861C053A270971F400713E19 /* TaskViewModel.swift in Sources */,
 				86AA7768270A015000EFAA74 /* TaskRowView.swift in Sources */,
