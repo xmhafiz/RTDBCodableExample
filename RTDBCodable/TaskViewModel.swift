@@ -33,14 +33,13 @@ class TaskViewModel: ObservableObject {
     }
     
     func addTask(title: String) {
-        let id = UUID().uuidString
-        ref.child("tasks/\(id)")
-            .setValue([
-                "id": id,
-                "title": title,
-                "completed": false,
-                "updatedAt": Date().timeIntervalSince1970
-            ])
+        let task = Task(title: title)
+        do {
+            try ref.child("tasks/\(task.id)")
+                .setValue(from: task)
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     
     func markComplete(id: String, completed: Bool) {
