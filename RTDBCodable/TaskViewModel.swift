@@ -6,9 +6,9 @@
 //
 
 import Combine
-import Foundation
 import FirebaseDatabase
 import FirebaseDatabaseSwift
+import Foundation
 
 class TaskViewModel: ObservableObject {
     @Published var tasks = [Task]()

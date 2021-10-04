@@ -13,7 +13,3 @@ struct Task: Codable {
     var completed = false
     var updatedAt = Date()
 }
-
-struct TaskObject: Codable {
-    var task: Task
-}

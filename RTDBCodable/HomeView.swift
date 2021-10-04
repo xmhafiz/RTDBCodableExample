@@ -32,14 +32,3 @@ struct HomeView: View {
         viewModel.remove(id: taskId)
     }
 }
-
-
-
-//        let id = UUID().uuidString
-//        ref.child("tasks/\(id)")
-//            .setValue([
-//                "id": id,
-//                "title": title,
-//                "completed": false,
-//                "updatedAt": Date().timeIntervalSince1970
-//            ])
