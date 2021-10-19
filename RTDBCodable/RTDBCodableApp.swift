@@ -5,11 +5,14 @@
 //  Created by Hafiz on 03/10/2021.
 //
 
+import Firebase
 import SwiftUI
 
 @main
 struct RTDBCodableApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
