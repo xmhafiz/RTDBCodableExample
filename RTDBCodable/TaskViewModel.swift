@@ -12,14 +12,15 @@ import Foundation
 
 class TaskViewModel: ObservableObject {
     @Published var tasks = [Task]()
-    let ref = Database.database().reference()
+    private let ref = Database.database().reference()
+    private let dbPath = "tasks"
     
     init() {
         initListener()
     }
     
     func initListener() {
-        ref.child("tasks").observe(.value) { snapshot in
+        ref.child(dbPath).observe(.value) { snapshot in
             guard let children = snapshot.children.allObjects as? [DataSnapshot] else {
                 return
             }
@@ -33,9 +34,12 @@ class TaskViewModel: ObservableObject {
     }
     
     func addTask(title: String) {
-        let task = Task(title: title)
+        guard let autoId = ref.child(dbPath).childByAutoId().key else {
+            return
+        }
+        let task = Task(id: autoId, title: title)
         do {
-            try ref.child("tasks/\(task.id)")
+            try ref.child("\(dbPath)/\(task.id)")
                 .setValue(from: task)
         } catch let error {
             print(error.localizedDescription)
@@ -43,7 +47,7 @@ class TaskViewModel: ObservableObject {
     }
     
     func markComplete(id: String, completed: Bool) {
-        ref.child("tasks/\(id)")
+        ref.child("\(dbPath)/\(id)")
             .updateChildValues([
                 "completed": completed,
                 "updatedAt": Date().timeIntervalSince1970
@@ -51,6 +55,6 @@ class TaskViewModel: ObservableObject {
     }
     
     func remove(id: String) {
-        ref.child("tasks/\(id)").setValue(nil)
+        ref.child("\(dbPath)/\(id)").setValue(nil)
     }
 }

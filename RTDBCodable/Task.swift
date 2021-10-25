@@ -8,7 +8,7 @@
 import Foundation
 
 struct Task: Codable {
-    var id: String = UUID().uuidString
+    var id: String
     var title: String
     var completed = false
     var updatedAt = Date()

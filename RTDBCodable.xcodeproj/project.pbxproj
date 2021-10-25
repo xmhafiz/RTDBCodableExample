@@ -14,8 +14,8 @@
 		8680602F27091B4F00E4DBFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680602E27091B4F00E4DBFF /* ContentView.swift */; };
 		8680603127091B5400E4DBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8680603027091B5400E4DBFF /* Assets.xcassets */; };
 		8680603427091B5400E4DBFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8680603327091B5400E4DBFF /* Preview Assets.xcassets */; };
-		86893A01270B365200C3FB57 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 86893A00270B365200C3FB57 /* FirebaseDatabase */; };
-		86893A03270B365200C3FB57 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 86893A02270B365200C3FB57 /* FirebaseDatabaseSwift-Beta */; };
+		8690430B2726F6C4006A8D09 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8690430A2726F6C4006A8D09 /* FirebaseDatabase */; };
+		8690430D2726F6C4006A8D09 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8690430C2726F6C4006A8D09 /* FirebaseDatabaseSwift-Beta */; };
 		86AA7768270A015000EFAA74 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA7767270A015000EFAA74 /* TaskRowView.swift */; };
 		86AA776A270A066E00EFAA74 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA7769270A066E00EFAA74 /* AddTaskView.swift */; };
 		86AA776C270AB48B00EFAA74 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA776B270AB48B00EFAA74 /* HomeView.swift */; };
@@ -40,8 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86893A03270B365200C3FB57 /* FirebaseDatabaseSwift-Beta in Frameworks */,
-				86893A01270B365200C3FB57 /* FirebaseDatabase in Frameworks */,
+				8690430D2726F6C4006A8D09 /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				8690430B2726F6C4006A8D09 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +114,8 @@
 			);
 			name = RTDBCodable;
 			packageProductDependencies = (
-				86893A00270B365200C3FB57 /* FirebaseDatabase */,
-				86893A02270B365200C3FB57 /* FirebaseDatabaseSwift-Beta */,
+				8690430A2726F6C4006A8D09 /* FirebaseDatabase */,
+				8690430C2726F6C4006A8D09 /* FirebaseDatabaseSwift-Beta */,
 			);
 			productName = RTDBCodable;
 			productReference = 8680602927091B4F00E4DBFF /* RTDBCodable.app */;
@@ -146,7 +146,7 @@
 			);
 			mainGroup = 8680602027091B4F00E4DBFF;
 			packageReferences = (
-				868939FF270B365200C3FB57 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				869043092726F6C4006A8D09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 8680602A27091B4F00E4DBFF /* Products */;
 			projectDirPath = "";
@@ -388,25 +388,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		868939FF270B365200C3FB57 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		869043092726F6C4006A8D09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				kind = exactVersion;
-				version = 8.8.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86893A00270B365200C3FB57 /* FirebaseDatabase */ = {
+		8690430A2726F6C4006A8D09 /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 868939FF270B365200C3FB57 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 869043092726F6C4006A8D09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
 		};
-		86893A02270B365200C3FB57 /* FirebaseDatabaseSwift-Beta */ = {
+		8690430C2726F6C4006A8D09 /* FirebaseDatabaseSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 868939FF270B365200C3FB57 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 869043092726F6C4006A8D09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseDatabaseSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
